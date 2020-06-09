@@ -1,0 +1,15 @@
+{
+  "name": "node-docker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "build-image": "docker build -t capucho/node-docker .",
+    "run:docker": "docker run -p 9876:3000 -d capucho/node-docker"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
